@@ -73,3 +73,8 @@ Executive overview integrates rules-derived risk flags from annual budget modeli
 ## Fictional-data and non-affiliation disclaimer
 
 Disclaimer: This is an independent, fictional portfolio demonstration. All names, company names, vendors, employee profiles, financial figures, events, and operational records are provided solely for illustrative purposes. Any resemblance to real persons or organizations is coincidental. No affiliation, endorsement, employment relationship, or connection with any real company is stated or implied.
+
+
+## Public engagement experience (portfolio branch root)
+
+The branch-root `index.html` adds a no-login landing screen, navigation to the full dashboard, and a fictional Budget Optimization Challenge. Visitors select cost interventions, view scenario savings and risk scores, save choices locally in their own browser, and export a decision report to CSV. An external feedback link opens the repository's GitHub Issues page (posting requires a GitHub account). This is illustrative training content, not professional financial advice or real workplace results. GitHub Pages must be configured separately to publish this branch root.
