@@ -59,3 +59,12 @@ Adds event requests, approved budgets, fictional vendor/PO commitments, staff al
 ## Phase 5: Executive management analytics
 
 Executive overview integrates rules-derived risk flags from annual budget modeling, vendor scorecards, contract alerts, team capacity (including planned event hours), employee requests, amenities, and event exceptions. Risks are ranked High/Medium/Low. Users can record an accountable owner, decision, due date and status, and export the exception register to CSV. Dashboard recomputes when opened. Notes are stored locally in the browser. All data and conclusions are fictional and illustrate decision controls only; events are not double-counted into operating budget actuals and invoices are not approved through the dashboard.
+
+
+## Debug and release audit (2026-10-24)
+- Restored and verified canonical five-module HTML source on this branch; earlier GitHub source was behind the local complete release.
+- Corrected executive contract exceptions to use `Monitored` for healthy contracts.
+- Corrected expired insurance / contracts severity detection to case-insensitive matching.
+- Static validation: 153 HTML identifiers checked against 143 JavaScript static references, zero missing, JavaScript syntax passes.
+- Interactive Chromium testing was blocked by this runtime's administrator navigation policy; browser acceptance testing and GitHub Pages setup remain pending.
+- `workplace-operations-v3/index.html` is the canonical all-in-one app; all data is simulated.
