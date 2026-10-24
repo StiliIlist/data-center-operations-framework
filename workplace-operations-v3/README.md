@@ -25,3 +25,23 @@ Publish repository `/` or copy this folder's files to a GitHub Pages source dire
 
 ## Future phases
 2. Team supervision/coaching. 3. Employee experience/hospitality. 4. Event operations. 5. Integrated executive analytics and controlled record relationships.
+
+
+## V3 Phase 2 — Team performance & coaching (2026-10-24)
+
+- Simulated four-person staff roster with capacity hours, task completion counts, quality inputs, training deadlines, development goals.
+- Workstream assignment form, cumulative workload utilization calculation, per-person over-allocation warning.
+- Coaching action log with focus area, next steps and follow-up date; CSV export and local reset.
+- The team uses invented identities and static scenario metrics, not real personnel records or evidence of actual people management.
+- Example measurement date is fixed at 2026-10-24 for deterministic results.
+- Metrics are decision-support prompts, not employee evaluations or substitutes for supervisory judgment.
+- LocalStorage stores demonstration edits only; avoid entering personal or sensitive data.
+
+### Phase 2 acceptance checks
+
+1. Assigned hours aggregate by employee and across team.
+2. An assignment above capacity raises an over-allocation flag.
+3. Training due dates prior to 2026-10-24 are flagged overdue.
+4. Coaching logs save, render and survive local refresh.
+5. Reset restores fictional sample.
+6. Team CSV exports workload and quality indicators.
