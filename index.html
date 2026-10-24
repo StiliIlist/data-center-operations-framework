@@ -281,4 +281,26 @@ execEl('execReset').addEventListener('click',()=>{if(!confirm('Reset executive m
 // Recompute dashboard upon opening to reflect upstream local edits.
 document.querySelector('[data-tab="executive"]').addEventListener('click',execRender);
 execRender();
+
+(function(){
+const options=[
+["supplies","Standardize workplace consumables",9000,1,"Verify supply reliability and employee satisfaction."],
+["bids","Competitively rebid eligible service contracts",12000,2,"Use fair sourcing and vendor transition controls."],
+["events","Consolidate nonessential event purchases",6500,1,"Protect essential employee programs."],
+["schedule","Defer noncritical preventive work",13000,4,"Creates maintenance backlog and longer-term risk."],
+["staff","Reduce peak-hour hospitality coverage",11000,5,"Increases waiting time and service risk."],
+["checks","Remove supplier compliance inspections",8000,6,"Not recommended: undermines compliance controls."]];
+const key="workplace-budget-challenge-v1";
+let chosen=[];try{const x=JSON.parse(localStorage.getItem(key)||"[]");if(Array.isArray(x))chosen=x.filter(id=>options.some(o=>o[0]===id))}catch(_){}
+const $c=id=>document.getElementById(id),money=n=>"$"+Math.round(n).toLocaleString("en-US");
+function paint(){const selected=options.filter(o=>chosen.includes(o[0])),savings=selected.reduce((a,o)=>a+o[2],0),risk=selected.reduce((a,o)=>a+o[3],0),variance=28000-savings,ok=variance<=0&&risk<=6&&!chosen.includes("checks");
+$c("challengeChoices").innerHTML=options.map(o=>'<label style="display:block;padding:10px 0"><input type="checkbox" data-choice="'+o[0]+'" '+(chosen.includes(o[0])?"checked":"")+'> <strong>'+o[1]+'</strong> · '+money(o[2])+' savings · risk '+o[3]+'</label>').join("");
+$c("challengeMetrics").innerHTML=[["Savings",money(savings)],["Forecast",money(412000-savings)],["Variance",money(variance)],["Risk points",risk]].map(o=>'<div class="metric"><label>'+o[0]+'</label><strong>'+o[1]+'</strong></div>').join("");
+$c("challengeOutcome").textContent=ok?"Pass: budget and illustrative risk targets achieved":variance>0?"Budget remains "+money(variance)+" over plan":chosen.includes("checks")?"Compliance controls must be retained":"Budget reached, but operational risk exceeds tolerance";
+$c("challengeRationale").innerHTML=selected.length?"<ul>"+selected.map(o=>"<li><b>"+o[1]+":</b> "+o[4]+"</li>").join("")+"</ul>":"Select one or more options to see trade-offs.";
+document.querySelectorAll("[data-choice]").forEach(el=>el.addEventListener("change",()=>{chosen=el.checked?[...chosen,el.dataset.choice]:chosen.filter(id=>id!==el.dataset.choice);try{localStorage.setItem(key,JSON.stringify(chosen))}catch(_){}paint()}))}
+document.querySelectorAll("[data-open-tab]").forEach(el=>el.addEventListener("click",()=>document.querySelector('[data-tab="'+el.dataset.openTab+'"]').click()));
+$c("challengeReset").addEventListener("click",()=>{chosen=[];try{localStorage.removeItem(key)}catch(_){}paint()});
+$c("challengeExport").addEventListener("click",()=>{const sel=options.filter(o=>chosen.includes(o[0])),sv=sel.reduce((a,o)=>a+o[2],0);download("budget-challenge-report.csv",[["Fictional workplace budget challenge","Value"],["Budget",384000],["Baseline forecast",412000],["Savings",sv],["Forecast",412000-sv],["Variance",28000-sv],["Total risk points",sel.reduce((a,o)=>a+o[3],0)],[],["Intervention","Savings","Risk points","Management tradeoff"],...sel.map(o=>[o[1],o[2],o[3],o[4]])])});
+paint()})();
 </script><aside role="note" style="max-width:1160px;margin:20px auto;padding:16px 20px;border:1px solid #38536d;border-radius:10px;background:#142436;color:#d4e3f1;font-size:13px;line-height:1.6"><strong>Portfolio disclaimer</strong><p style="margin:8px 0 0">Disclaimer: This is an independent, fictional portfolio demonstration. All names, company names, vendors, employee profiles, financial figures, events, and operational records are provided solely for illustrative purposes. Any resemblance to real persons or organizations is coincidental. No affiliation, endorsement, employment relationship, or connection with any real company is stated or implied.</p></aside></body></html>
