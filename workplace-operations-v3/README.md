@@ -54,3 +54,8 @@ The interactive dashboard adds fictional employee service requests (owner, due d
 ## Phase 4 — Event Operations & Budget Management
 
 Adds event requests, approved budgets, fictional vendor/PO commitments, staff allocations, budget-variance and capacity warnings, closeout expenses, attendance, optional attendee feedback, CSV export and reset. The event register is simulated and persists only in browser localStorage. Fixed evaluation date: 2026-10-24. Completed-event actuals replace commitments for event exposure, rather than being added to them. Event costs do **not** automatically post to existing budget or invoice ledgers; PO identifiers are demonstrative and do not authorize expenditure. The portfolio demonstrates decision rules, not actual Roblox operations.
+
+
+## Phase 5: Executive management analytics
+
+Executive overview integrates rules-derived risk flags from annual budget modeling, vendor scorecards, contract alerts, team capacity (including planned event hours), employee requests, amenities, and event exceptions. Risks are ranked High/Medium/Low. Users can record an accountable owner, decision, due date and status, and export the exception register to CSV. Dashboard recomputes when opened. Notes are stored locally in the browser. All data and conclusions are fictional and illustrate decision controls only; events are not double-counted into operating budget actuals and invoices are not approved through the dashboard.
