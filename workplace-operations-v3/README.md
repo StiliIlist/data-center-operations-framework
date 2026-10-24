@@ -49,3 +49,8 @@ Publish repository `/` or copy this folder's files to a GitHub Pages source dire
 ## Phase 3: Workplace hospitality and employee experience
 
 The interactive dashboard adds fictional employee service requests (owner, due date, status), feedback scores and documented service-recovery actions, plus simulated amenity-readiness inspections. Low scores of 1–2 require a follow-up action. KPIs include overdue open requests, mean satisfaction among rated requests, low-score counts and amenities needing attention. Records can be edited, exported as CSV and reset using browser-local storage. Fixed evaluation date: 2026-10-24. This is a portfolio demonstration, not Roblox data or evidence of actual employee survey performance.
+
+
+## Phase 4 — Event Operations & Budget Management
+
+Adds event requests, approved budgets, fictional vendor/PO commitments, staff allocations, budget-variance and capacity warnings, closeout expenses, attendance, optional attendee feedback, CSV export and reset. The event register is simulated and persists only in browser localStorage. Fixed evaluation date: 2026-10-24. Completed-event actuals replace commitments for event exposure, rather than being added to them. Event costs do **not** automatically post to existing budget or invoice ledgers; PO identifiers are demonstrative and do not authorize expenditure. The portfolio demonstrates decision rules, not actual Roblox operations.
