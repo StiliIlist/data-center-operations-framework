@@ -68,3 +68,8 @@ Executive overview integrates rules-derived risk flags from annual budget modeli
 - Static validation: 153 HTML identifiers checked against 143 JavaScript static references, zero missing, JavaScript syntax passes.
 - Interactive Chromium testing was blocked by this runtime's administrator navigation policy; browser acceptance testing and GitHub Pages setup remain pending.
 - `workplace-operations-v3/index.html` is the canonical all-in-one app; all data is simulated.
+
+
+## Fictional-data and non-affiliation disclaimer
+
+Disclaimer: This is an independent, fictional portfolio demonstration. All names, company names, vendors, employee profiles, financial figures, events, and operational records are provided solely for illustrative purposes. Any resemblance to real persons or organizations is coincidental. No affiliation, endorsement, employment relationship, or connection with any real company is stated or implied.
