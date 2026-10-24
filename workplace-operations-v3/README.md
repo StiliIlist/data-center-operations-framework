@@ -45,3 +45,7 @@ Publish repository `/` or copy this folder's files to a GitHub Pages source dire
 4. Coaching logs save, render and survive local refresh.
 5. Reset restores fictional sample.
 6. Team CSV exports workload and quality indicators.
+
+## Phase 3: Workplace hospitality and employee experience
+
+The interactive dashboard adds fictional employee service requests (owner, due date, status), feedback scores and documented service-recovery actions, plus simulated amenity-readiness inspections. Low scores of 1–2 require a follow-up action. KPIs include overdue open requests, mean satisfaction among rated requests, low-score counts and amenities needing attention. Records can be edited, exported as CSV and reset using browser-local storage. Fixed evaluation date: 2026-10-24. This is a portfolio demonstration, not Roblox data or evidence of actual employee survey performance.
