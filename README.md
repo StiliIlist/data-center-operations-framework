@@ -227,3 +227,12 @@ Full interview guide including 60-second answer, skills breakdown, and closing l
 ## Author
 
 Built by an operations leader with experience in production systems, inventory control, compliance, and workflow optimization, transitioning these principles into data center and infrastructure operations.
+
+
+## Interactive Data Center Operations Lab (new)
+
+Open [the browser-based lab](index.html) for illustrative KPI trends, incident response training, and capacity-risk scenarios. The lab requires no account and exports fictional CSV datasets. It complements—rather than replaces—the existing Excel workbook and project documentation.
+
+**Community:** [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Open issues](https://github.com/StiliIlist/data-center-operations-framework/issues). The GitHub Pages public site requires separate activation under repository Settings → Pages (`main` / root).
+
+**Disclaimer:** All scenarios and companies are fictional; the lab is not affiliated with any actual data center operator. Its simplified scenarios do not substitute for real engineering, electrical safety, security, or incident-response procedures.
