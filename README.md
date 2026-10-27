@@ -236,3 +236,10 @@ Open [the browser-based lab](index.html) for illustrative KPI trends, incident r
 **Community:** [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Open issues](https://github.com/StiliIlist/data-center-operations-framework/issues). The GitHub Pages public site requires separate activation under repository Settings → Pages (`main` / root).
 
 **Disclaimer:** All scenarios and companies are fictional; the lab is not affiliated with any actual data center operator. Its simplified scenarios do not substitute for real engineering, electrical safety, security, or incident-response procedures.
+
+
+## Phase 2: Incident Lifecycle and RCA Lab
+
+The interactive lab now includes fictional incident ownership, ordered stage progression (Detected → Acknowledged → Investigating → Resolved → RCA Complete → Verified), timestamp checks, root-cause documentation, corrective actions, required verification evidence, timeline review, local browser storage, reset, and CSV export.
+
+**Training assumptions:** All example incidents are synthetic. The stage timestamp input is interpreted as UTC by convention; users must enter UTC wall-clock times. This module is a learning prototype, not a production incident system. No real system telemetry or safety-critical control is connected. A completed corrective action is not verified unless the demonstration's verification stage and evidence are recorded. Full manual browser testing is pending.
