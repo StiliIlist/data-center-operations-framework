@@ -243,3 +243,8 @@ Open [the browser-based lab](index.html) for illustrative KPI trends, incident r
 The interactive lab now includes fictional incident ownership, ordered stage progression (Detected → Acknowledged → Investigating → Resolved → RCA Complete → Verified), timestamp checks, root-cause documentation, corrective actions, required verification evidence, timeline review, local browser storage, reset, and CSV export.
 
 **Training assumptions:** All example incidents are synthetic. The stage timestamp input is interpreted as UTC by convention; users must enter UTC wall-clock times. This module is a learning prototype, not a production incident system. No real system telemetry or safety-critical control is connected. A completed corrective action is not verified unless the demonstration's verification stage and evidence are recorded. Full manual browser testing is pending.
+
+
+## Phase 3 — Preventive maintenance and compliance lab
+
+The new browser module tracks five synthetic preventive-maintenance tasks, inspection owner, due date, inspection date, observation evidence, and statuses (Scheduled, Overdue, Completed, Requires action). It exposes links from three fictional incidents to associated maintenance follow-up tasks; this is a reference-only association, not automatic work-order creation or closure. Dates are evaluated against fixed demo date 2026-10-26 and all edits remain local to the browser. Completion requires inspection date and evidence. Users can reset and export the maintenance register as CSV. The displayed completion count is not a formal regulatory compliance score. Manual cross-browser testing remains pending.
